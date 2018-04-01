@@ -3,7 +3,7 @@ HTML
 <input type='file' id='inputFileSelectorId' />
 JAVASCRIPT
 
-
+```
 Zr.use("compress",function(zr,compress){
         compress.config({
              uploadFlag:false,//禁止使用上传
@@ -13,13 +13,13 @@ Zr.use("compress",function(zr,compress){
         });
         compress.initSelector("#inputFileSelectorId");
 })       
-
+```
 
 当然如果有其他业务，不希望直接使用自己的选择器，可以传入一个图片的地址也可以实现以上效果
 
 JAVASCRIPT
 
-
+```
 Zr.use("compress",function(zr,compress){
         compress.config({
              uploadFlag:false,//禁止使用上传
@@ -28,7 +28,8 @@ Zr.use("compress",function(zr,compress){
              }
         });
         compress.initImg("http://www.jd.com/some.pic");
-})       
+})  
+```     
 compress提供的方法有以下
 
 Methods
@@ -92,16 +93,17 @@ blob兼容注释：
 blob类型兼容不是很好，请参考如下兼容列表
 
 桌面浏览器兼容列表
-
+```
 Feature	Chrome	Firefox (Gecko)	Internet Explorer	Opera	Safari
 Basic support	50	19 (19)	10ms	(Yes)	(Yes)[1]
 Image quality parameter	50	25 (25)	No support	(Yes)	No support
 移动端浏览器列表
-
+```
+```
 Feature	Android	Android Webview	Firefox Mobile (Gecko)	IE Mobile	Opera Mobile	Safari Mobile	Chrome for Android
 Basic support	No support	50	19.0 (19)	?	No support	?	50
 Image quality parameter	No support	50	25.0 (25)	?	No support	?	50
-
+```
 
 
 
